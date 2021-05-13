@@ -20,6 +20,7 @@ namespace XamBMI
         EditText txtResult;
         TextView txtMessage;
         Button btnCalculate;
+        ImageView img;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -37,6 +38,7 @@ namespace XamBMI
             txtMessage = FindViewById<TextView>(Resource.Id.txtMessage);
             btnCalculate = FindViewById<Button>(Resource.Id.btnCalculate);
             btnCalculate.Click += onBtnCalculateClick;
+            img = FindViewById<ImageView>(Resource.Id.imageView1);
         }
 
         private void onBtnCalculateClick(object sender, EventArgs e)
@@ -67,6 +69,7 @@ namespace XamBMI
             else if (BMIAnswer >= 18.60 && BMIAnswer <= 24.99)
             {
                 txtMessage.Text = "Normal";
+                img.SetImageResource(Resource.Drawable.Healthy);
             }
             else if (BMIAnswer > 25 && BMIAnswer <= 29.99)
             {
