@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5px">
+    <TextView
+        android:text="BMI Calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/txtBMI"
+        android:textSize="50px"
+        android:textColor="#ff1c40d0"
+        android:background="#ffebec3e"
+        android:textAlignment="center" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="Weight(KG)"
+            android:layout_width="121.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtView1"
+            android:textColor="#ffebec3e"
+            android:background="#ff1c40d0"
+            android:textSize="40px"
+            android:layout_marginLeft="2px"
+            android:layout_marginStart="2px"
+            android:padding="2px"
+            android:layout_marginTop="2px"
+            android:textAlignment="center" />
+        <EditText
+            android:layout_width="263.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtWeight"
+            android:hint="Enter your weight in KG"
+            android:textColorHint="#ff736666"
+            android:inputType="none|numberDecimal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="Height(M)"
+            android:layout_width="121.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtView2"
+            android:textColor="#ffebec3e"
+            android:background="#ff1c40d0"
+            android:textSize="40px"
+            android:layout_marginLeft="2px"
+            android:layout_marginStart="2px"
+            android:padding="2px"
+            android:layout_marginTop="2px"
+            android:textAlignment="center" />
+        <EditText
+            android:layout_width="263.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtHeight"
+            android:hint="Enter your height in meters"
+            android:textColorHint="#ff736666"
+            android:inputType="none|numberDecimal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="Result"
+            android:layout_width="121.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtview3"
+            android:textColor="#ffebec3e"
+            android:background="#ff1c40d0"
+            android:textSize="40px"
+            android:layout_marginLeft="2px"
+            android:layout_marginStart="2px"
+            android:padding="2px"
+            android:layout_marginTop="2px"
+            android:textAlignment="center" />
+        <EditText
+            android:layout_width="263.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txtResult"
+            
+            android:textColorHint="#ff736666" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+
+    </LinearLayout>
+    <Button
+        android:text="Calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalculate"
+        android:backgroundTint="#ffebec3e"
+        android:textColor="#ff1c40d0" />
+    <TextView
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMessage" />
+
+
+</LinearLayout>
